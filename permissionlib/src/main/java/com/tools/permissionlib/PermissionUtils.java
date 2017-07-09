@@ -1,12 +1,5 @@
 /*
- * Copyright (c) 2017- SmartFit Inc. All Rights Reserved.
- *
- * This software is the confidential and proprietary information of
- * SmartFit Inc. ("Confidential Information"). You shall not disclose
- * such Confidential Information and shall use it only in accordance
- * with the terms of the license agreement you entered into with SmartFit
- * Inc. All unauthorized usages in any manner are expressly prohibited.
- *
+ * Copyright (c)
 */
 package com.tools.permissionlib;
 
