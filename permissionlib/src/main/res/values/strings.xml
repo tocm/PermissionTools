@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PermissionLib</string>
+    <string name="dialog_alert_msg">请在打开的窗口的权限中开启</string>
 </resources>

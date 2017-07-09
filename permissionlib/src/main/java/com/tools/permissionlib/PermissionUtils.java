@@ -57,7 +57,7 @@ public class PermissionUtils {
             mPermissionEntities = new PermissionEntity[permissions.length];
             for (int i=0; i<permissions.length; i++) {
                 String permission = permissions[i];
-                PermissionEntity permissionEntity = new PermissionEntity(permission, permission, "Need to apply permission: "+permission, PERMISSION_CODE + i);
+                PermissionEntity permissionEntity = new PermissionEntity(permission, permission, "应用需要获取权限: "+permission, PERMISSION_CODE + i);
                 mPermissionEntities[i] = permissionEntity;
             }
         }
@@ -126,7 +126,7 @@ public class PermissionUtils {
 
                 } else {
                     AlertDialog.Builder builder = new AlertDialog.Builder(mActivity);
-                    builder.setMessage("请在打开的窗口的权限中开启" + findPermissionName(permissions[0])).setPositiveButton("settings",  new DialogInterface.OnClickListener() {
+                    builder.setMessage(mActivity.getString(R.string.dialog_alert_msg) + findPermissionName(permissions[0])).setPositiveButton("settings",  new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             dialogInterface.dismiss();
